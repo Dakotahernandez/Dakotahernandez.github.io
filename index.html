@@ -158,7 +158,7 @@
     <img src="https://avatars.githubusercontent.com/u/128409247?v=4" alt="Dakota Hernandez">
     <div>
       <h1>Hi, I'm Dakota.</h1>
-      <p>Computer Science student at Baylor University and Software Engineering Intern at Brazos Innovation Partners. I like building things close to the metal: ray tracers, concurrent systems, game AI, and machine learning.</p>
+      <p>Computer Science student at Baylor University and Software Engineering Intern at Brazos Innovation Partners. I like building things close to the metal: ray tracers, concurrent systems, live-streaming infrastructure, game AI, and machine learning.</p>
       <div class="btns">
         <a class="btn primary" href="https://github.com/Dakotahernandez">GitHub</a>
         <a class="btn" href="https://www.linkedin.com/in/dakota-hernandezbu">LinkedIn</a>
@@ -208,6 +208,11 @@ const PROJECTS = [
     tags: ["C++", "Ray tracing", "CMake", "SDL2"]
   },
   {
+    repo: "fidget-livestreaming", title: "Fidget: Live Streaming Platform", lang: "Rust", featured: true,
+    desc: "A one-to-many live streaming platform with CDN-style delivery. Browsers broadcast over WebTransport (QUIC) or WebRTC, a Rust/Axum backend transcodes each stream into a 1080p/720p/360p ladder, and viewers watch over WebRTC with HLS fallback. A GeoIP router sends each viewer to the nearest edge, deployed on AWS EC2, S3 and CloudFront.",
+    tags: ["Rust", "Axum", "WebRTC", "QUIC", "ffmpeg", "Docker", "AWS"]
+  },
+  {
     repo: "Programming-2---Multi-Process-IPC-Worker-Pool", title: "Signal Hunters: Beacon Analysis", lang: "C++", featured: true,
     desc: "A multithreaded C++11 system that analyzes thousands of irregularly sized radio-signal segments to find emergency beacons, built on a reusable thread pool with atomics, thread_local state and careful synchronization for load balancing.",
     tags: ["C++11", "Thread pool", "Concurrency", "Atomics"]
@@ -219,7 +224,7 @@ const PROJECTS = [
     site: "https://macj2005.github.io/PawPlatesProjectSite/"
   },
   {
-    repo: "Tiger_game_AI", title: "Tiger Game AI", lang: "C++", featured: true,
+    repo: "Tiger_game_AI", title: "Tiger Game AI", lang: "C++",
     desc: "An AI that plays the traditional Chinese Tiger game, where one tiger hunts 18 men on an 8×8 board, picking moves through a game API and visualizing play with SDL.",
     tags: ["C++", "Game AI", "SDL2"]
   },
